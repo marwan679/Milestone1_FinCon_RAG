@@ -1,0 +1,49 @@
+# Environment & Secrets
+.env
+.env.local
+*.env
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Jupyter & IDE
+.ipynb_checkpoints
+.vscode/
+.idea/
+
+# OS Specific
+.DS_Store
+Thumbs.db
+
+# Large Index & Vector Databases (>100MB generated during ingestion)
+chroma_db/
+data/bm25_index.pkl
+data/parent_docstore.json
+data/processed/financial_corpus_processed.csv
+data/processed/financial_corpus_processed.json
+data/raw/baai_finance_economics_raw_75k.csv

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "std_ifrs_s1_s2_01",
+    "standard": "IFRS S1 & IFRS S2",
+    "topic": "Sustainability & Climate Disclosures Scope and Pillars",
+    "content": "Issued by the International Sustainability Standards Board (ISSB), IFRS S1 (General Requirements) and IFRS S2 (Climate-related Disclosures) establish global baseline capital market disclosures effective across 2025/2026 mandatory filing cycles. Reports must follow four TCFD architecture pillars: Governance (processes to monitor climate risk), Strategy (impacts on business model and cash flows), Risk Management (integration into ERM), and Metrics and Targets (quantifiable net-zero progress and carbon pricing)."
+  },
+  {
+    "id": "std_ifrs_s2_ghg_02",
+    "standard": "IFRS S2",
+    "topic": "Scope 1, 2, and 3 Greenhouse Gas Accounting & Connectivity",
+    "content": "Scope 1 covers direct emissions from owned/controlled assets. Scope 2 covers indirect emissions from purchased electricity and cooling. Scope 3 (mandatory following 2026 relief expiration) covers all upstream and downstream value chain emissions, including Category 15 financed emissions for banks and asset managers. Material climate capital expenditures (CapEx) and operational expenses (OpEx) must be directly cross-referenced to balance sheet and income statement financial notes."
+  },
+  {
+    "id": "std_csrd_esrs_01",
+    "standard": "EU CSRD / ESRS",
+    "topic": "Double Materiality and Wave 2 Thresholds",
+    "content": "The EU Corporate Sustainability Reporting Directive (CSRD) mandates European Sustainability Reporting Standards (ESRS). Wave 2 applies in 2025/2026 to large companies meeting 2 of 3 criteria: >250 employees, >€50M net revenue, or >€25M balance sheet total. Controllers must conduct a Double Materiality assessment: 1) Impact Materiality (Inside-Out impact on society and environment) and 2) Financial Materiality (Outside-In ESG risks triggering material effects on cash flows, enterprise value, or cost of capital)."
+  },
+  {
+    "id": "std_csrd_audit_02",
+    "standard": "EU CSRD / ESRS",
+    "topic": "Digital Reporting (ESEF) and Mandatory Limited Assurance",
+    "content": "All CSRD sustainability statements must be prepared in XHTML format and digitally tagged using the ESRS XBRL Taxonomy within the management report. Statutory third-party Limited Assurance is legally mandatory for 2025/2026 reporting cycles, transitioning to Reasonable Assurance by 2028. Financial controlling audit controls must verify Scope 1-3 audit trails and EU Taxonomy CapEx/OpEx alignment before audit committee sign-off."
+  },
+  {
+    "id": "std_basel_iii_frtb_01",
+    "standard": "Basel III / IV Endgame",
+    "topic": "Fundamental Review of the Trading Book (FRTB) Market Risk",
+    "content": "The Basel III Endgame capital rules finalize international standards across the Federal Reserve, PRA UK, and ECB CRR III for 2025–2026 implementation. Under FRTB, Value-at-Risk (VaR) is replaced by Expected Shortfall (ES) calibrated to a 97.5% confidence level. Stringent P&L attribution and backtesting tests govern whether trading desks maintain Internal Models Approach (IMA) or fall back to Standardized Approach (SA)."
+  },
+  {
+    "id": "std_basel_iii_output_floor_02",
+    "standard": "Basel III / IV Endgame",
+    "topic": "Operational Risk SMA and 72.5% Capital Output Floor",
+    "content": "Operational risk capital is calculated via the Standardized Measurement Approach: OpRisk Capital = Business Indicator Component (BIC) * Internal Loss Multiplier (ILM). An aggregate 72.5% Capital Output Floor is established, requiring that total modeled Risk-Weighted Assets (RWAs) cannot drop below 72.5% of standardized approach RWAs. Minimum CET1 capital ratio is 4.5% base plus 2.5% Capital Conservation Buffer plus G-SIB surcharges."
+  },
+  {
+    "id": "std_sec_cyber_01",
+    "standard": "SEC Item 106 & Form 8-K",
+    "topic": "Four-Day Materiality Incident Rule and Governance Oversight",
+    "content": "Under SEC Form 8-K Item 1.05, public companies must disclose any material cybersecurity incident within four business days after determining materiality. Materiality evaluations require assessing quantitative impact (remediation expenses, direct losses, lost revenue) and qualitative factors (reputation, litigation risk, IP loss). Form 10-K Item 106 requires annual disclosures regarding board committee oversight, CISO management expertise, and third-party SaaS/cloud vendor risk controls."
+  }
+]

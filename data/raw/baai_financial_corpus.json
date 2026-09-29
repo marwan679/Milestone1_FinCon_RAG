@@ -1,0 +1,178 @@
+[
+  {
+    "id": "baai_fin_001",
+    "topic": "Explain the Modigliani-Miller Theorem with and without corporate taxes.",
+    "instruction": "Explain the Modigliani-Miller Theorem with and without corporate taxes.",
+    "content": "Topic: Explain the Modigliani-Miller Theorem with and without corporate taxes.\n\nFinancial Controlling Principles & Analysis:\nThe Modigliani-Miller Theorem (Proposition I) without taxes states that in perfect capital markets, a firm's capital structure is irrelevant to its total enterprise value. Proposition II states that the cost of equity increases linearly with the debt-to-equity ratio to offset financial risk. When corporate taxes are introduced (1963 amendment), debt financing creates an Interest Tax Shield (Value of Levered Firm = Value of Unlevered Firm + Tax Rate * Debt). However, at high debt levels, the expected costs of financial distress and bankruptcy offset tax shield benefits, establishing the Trade-off Theory of capital structure.",
+    "domain": "Corporate Finance, Controlling & Accounting",
+    "source": "baai_financial_corpus.json"
+  },
+  {
+    "id": "baai_fin_002",
+    "topic": "What is the difference between Weighted Average Cost of Capital (WACC) and Adjusted Presen",
+    "instruction": "What is the difference between Weighted Average Cost of Capital (WACC) and Adjusted Present Value (APV)?",
+    "content": "Topic: What is the difference between Weighted Average Cost of Capital (WACC) and Adjusted Present Value (APV)?\n\nFinancial Controlling Principles & Analysis:\nWACC incorporates the tax deductibility of debt directly into the discount rate: WACC = (E/V * Re) + (D/V * Rd * (1 - t)), assuming a target debt-to-equity ratio maintained over time. Adjusted Present Value (APV) evaluates the project as if entirely equity-financed (discounted at unlevered cost of equity) and adds the Net Present Value of financing side effects separately (NPV of Interest Tax Shields minus costs of financial distress and issue costs). APV is preferred in LBOs or dynamic debt schedules.",
+    "domain": "Corporate Finance, Controlling & Accounting",
+    "source": "baai_financial_corpus.json"
+  },
+  {
+    "id": "baai_fin_003",
+    "topic": "Describe the Pecking Order Theory of corporate capital structure.",
+    "instruction": "Describe the Pecking Order Theory of corporate capital structure.",
+    "content": "Topic: Describe the Pecking Order Theory of corporate capital structure.\n\nFinancial Controlling Principles & Analysis:\nFormulated by Myers and Majluf, the Pecking Order Theory posits that due to asymmetric information between managers and external investors, firms prioritize internal financing (retained earnings) first, followed by safe debt second, convertible debt third, and external equity issuance as a last resort. Equity issuance signals overvaluation to the market, triggering stock price discounts.",
+    "domain": "Corporate Finance, Controlling & Accounting",
+    "source": "baai_financial_corpus.json"
+  },
+  {
+    "id": "baai_fin_004",
+    "topic": "How do Discounted Cash Flow (DCF) models handle Terminal Value calculation using Perpetual",
+    "instruction": "How do Discounted Cash Flow (DCF) models handle Terminal Value calculation using Perpetual Growth vs Exit Multiples?",
+    "content": "Topic: How do Discounted Cash Flow (DCF) models handle Terminal Value calculation using Perpetual Growth vs Exit Multiples?\n\nFinancial Controlling Principles & Analysis:\nTerminal Value (TV) accounts for value beyond explicit forecast periods (typically 5–10 years). Under the Gordon Growth Model: TV = (FCFF_final * (1 + g)) / (WACC - g), where g must not exceed long-term GDP growth (typically 2–3%). Under the Exit Multiple Method: TV = Final Year Metric (e.g. EBITDA) * Industry Benchmark Multiple. Best practice requires triangulating both approaches and cross-checking the implied perpetual growth rate resulting from the exit multiple.",
+    "domain": "Corporate Finance, Controlling & Accounting",
+    "source": "baai_financial_corpus.json"
+  },
+  {
+    "id": "baai_fin_005",
+    "topic": "Explain the difference between Free Cash Flow to Firm (FCFF) and Free Cash Flow to Equity ",
+    "instruction": "Explain the difference between Free Cash Flow to Firm (FCFF) and Free Cash Flow to Equity (FCFE).",
+    "content": "Topic: Explain the difference between Free Cash Flow to Firm (FCFF) and Free Cash Flow to Equity (FCFE).\n\nFinancial Controlling Principles & Analysis:\nFCFF represents cash flow available to all capital providers (debt holders and equity holders): FCFF = EBIT * (1 - t) + D&A - CapEx - Change in Non-Cash Working Capital, discounted at WACC. FCFE represents cash available strictly to equity shareholders after servicing debt: FCFE = Net Income + D&A - CapEx - Change in Non-Cash Working Capital + Net Debt Issued (Debt Issued - Debt Repaid), discounted at the Cost of Equity.",
+    "domain": "Corporate Finance, Controlling & Accounting",
+    "source": "baai_financial_corpus.json"
+  },
+  {
+    "id": "baai_fin_006",
+    "topic": "What are the key adjustments made when normalizing EBITDA for M&A due diligence?",
+    "instruction": "What are the key adjustments made when normalizing EBITDA for M&A due diligence?",
+    "content": "Topic: What are the key adjustments made when normalizing EBITDA for M&A due diligence?\n\nFinancial Controlling Principles & Analysis:\nNormalized (Adjusted) EBITDA removes non-recurring, discretionary, and non-operational items to reflect true ongoing cash generation. Typical adjustments include: 1) One-off restructuring or legal litigation costs; 2) Owner/executive excess compensation and personal expenses; 3) Severance and transition fees; 4) Unrealized FX gains/losses; 5) Non-operating asset gains/losses; and 6) Pro-forma run-rate synergies from completed acquisitions.",
+    "domain": "Corporate Finance, Controlling & Accounting",
+    "source": "baai_financial_corpus.json"
+  },
+  {
+    "id": "baai_fin_007",
+    "topic": "How does the Cash Conversion Cycle (CCC) measure working capital efficiency?",
+    "instruction": "How does the Cash Conversion Cycle (CCC) measure working capital efficiency?",
+    "content": "Topic: How does the Cash Conversion Cycle (CCC) measure working capital efficiency?\n\nFinancial Controlling Principles & Analysis:\nThe Cash Conversion Cycle measures the time required for a company to convert cash outflows for inventory into cash inflows from customer sales: CCC = Days Sales Outstanding (DSO = AR / Revenue * 365) + Days Inventory Outstanding (DIO = Inventory / COGS * 365) - Days Payable Outstanding (DPO = AP / COGS * 365). A shorter or negative CCC indicates superior cash generation, allowing companies to finance growth using supplier credit rather than bank debt.",
+    "domain": "Corporate Finance, Controlling & Accounting",
+    "source": "baai_financial_corpus.json"
+  },
+  {
+    "id": "baai_fin_008",
+    "topic": "What are the differences between standard costing variance analysis components (Price, Qua",
+    "instruction": "What are the differences between standard costing variance analysis components (Price, Quantity, Efficiency, Volume)?",
+    "content": "Topic: What are the differences between standard costing variance analysis components (Price, Quantity, Efficiency, Volume)?\n\nFinancial Controlling Principles & Analysis:\nStandard costing decomposes total manufacturing cost variances into: 1) Direct Material Price Variance = Actual Quantity * (Actual Price - Standard Price); 2) Direct Material Quantity (Usage) Variance = Standard Price * (Actual Quantity - Standard Quantity Allowed); 3) Direct Labor Rate Variance = Actual Hours * (Actual Rate - Standard Rate); 4) Direct Labor Efficiency Variance = Standard Rate * (Actual Hours - Standard Hours Allowed); and 5) Fixed Overhead Volume Variance = Budgeted Fixed Overhead - Applied Fixed Overhead.",
+    "domain": "Corporate Finance, Controlling & Accounting",
+    "source": "baai_financial_corpus.json"
+  },
+  {
+    "id": "baai_fin_009",
+    "topic": "Explain the revenue recognition criteria for multi-element arrangements under ASC 606 / IF",
+    "instruction": "Explain the revenue recognition criteria for multi-element arrangements under ASC 606 / IFRS 15.",
+    "content": "Topic: Explain the revenue recognition criteria for multi-element arrangements under ASC 606 / IFRS 15.\n\nFinancial Controlling Principles & Analysis:\nUnder the 5-step model, entities must determine whether promised goods or services in a bundled contract are distinct performance obligations. If distinct, transaction price is allocated to each obligation in proportion to its relative Standalone Selling Price (SSP). If observable market prices are unavailable, entities must estimate SSP using the adjusted market assessment approach, expected cost plus margin approach, or residual approach.",
+    "domain": "Corporate Finance, Controlling & Accounting",
+    "source": "baai_financial_corpus.json"
+  },
+  {
+    "id": "baai_fin_010",
+    "topic": "How do Financial Controllers use Interest Rate Swaps (IRS) for liability risk management?",
+    "instruction": "How do Financial Controllers use Interest Rate Swaps (IRS) for liability risk management?",
+    "content": "Topic: How do Financial Controllers use Interest Rate Swaps (IRS) for liability risk management?\n\nFinancial Controlling Principles & Analysis:\nAn Interest Rate Swap involves exchanging fixed-rate interest payments for floating-rate (SOFR/EURIBOR) payments based on a notional principal without exchanging principal. Controllers use receiver swaps (receive fixed, pay floating) to reduce debt servicing costs when interest rates decline, and payer swaps (pay fixed, receive floating) to lock in fixed borrowing costs and eliminate cash flow volatility on floating-rate syndicated credit facilities.",
+    "domain": "Corporate Finance, Controlling & Accounting",
+    "source": "baai_financial_corpus.json"
+  },
+  {
+    "id": "baai_fin_011",
+    "topic": "Explain Black-Scholes-Merton option pricing assumptions and the interpretation of Option G",
+    "instruction": "Explain Black-Scholes-Merton option pricing assumptions and the interpretation of Option Greeks (Delta, Gamma, Vega, Theta).",
+    "content": "Topic: Explain Black-Scholes-Merton option pricing assumptions and the interpretation of Option Greeks (Delta, Gamma, Vega, Theta).\n\nFinancial Controlling Principles & Analysis:\nThe Black-Scholes model prices European options assuming log-normal asset prices, constant volatility, continuous trading, and risk-free interest rates. The Greeks measure sensitivities: 1) Delta (dC/dS) measures change in option price per $1 move in underlying asset; 2) Gamma (dDelta/dS) measures the rate of change of Delta; 3) Vega (dC/dsigma) measures sensitivity to volatility changes; 4) Theta (dC/dt) measures time decay; and 5) Rho (dC/dr) measures sensitivity to interest rates.",
+    "domain": "Corporate Finance, Controlling & Accounting",
+    "source": "baai_financial_corpus.json"
+  },
+  {
+    "id": "baai_fin_012",
+    "topic": "Describe the Value at Risk (VaR) vs Expected Shortfall (ES) risk measurement debate in Bas",
+    "instruction": "Describe the Value at Risk (VaR) vs Expected Shortfall (ES) risk measurement debate in Basel III/IV.",
+    "content": "Topic: Describe the Value at Risk (VaR) vs Expected Shortfall (ES) risk measurement debate in Basel III/IV.\n\nFinancial Controlling Principles & Analysis:\nValue at Risk (VaR at confidence alpha) indicates the maximum loss expected over a time horizon at a given probability level, but suffers from failing the subadditivity axiom (not a coherent risk measure) and ignoring tail risk beyond the threshold. Expected Shortfall (Conditional VaR) calculates the expected loss conditional on the loss exceeding the VaR threshold (the average of tail losses). Basel III/IV FRTB mandates replacing 99% VaR with 97.5% Expected Shortfall to ensure prudent market risk capital backing.",
+    "domain": "Corporate Finance, Controlling & Accounting",
+    "source": "baai_financial_corpus.json"
+  },
+  {
+    "id": "baai_fin_013",
+    "topic": "[Treasury & FX] Currency Hedging with Forward Contracts vs Cross-Currency Swaps",
+    "instruction": "[Treasury & FX] Currency Hedging with Forward Contracts vs Cross-Currency Swaps",
+    "content": "Topic: [Treasury & FX] Currency Hedging with Forward Contracts vs Cross-Currency Swaps\n\nFinancial Controlling Principles & Analysis:\nTreasury teams manage transactional and translational currency exposure using forward contracts (locking in guaranteed future exchange rates based on Interest Rate Parity) or FX options (providing downside insurance while retaining upside participation). Cross-currency swaps exchange both principal and interest payments in different currencies, managing multi-currency funding requirements.",
+    "domain": "Corporate Finance, Controlling & Accounting",
+    "source": "baai_financial_corpus.json"
+  },
+  {
+    "id": "baai_fin_014",
+    "topic": "[Credit Risk] Altman Z-Score and Probability of Default Modeling",
+    "instruction": "[Credit Risk] Altman Z-Score and Probability of Default Modeling",
+    "content": "Topic: [Credit Risk] Altman Z-Score and Probability of Default Modeling\n\nFinancial Controlling Principles & Analysis:\nThe Altman Z-Score predicts corporate bankruptcy probability using 5 weighted financial ratios: Working Capital/Total Assets (X1), Retained Earnings/Total Assets (X2), EBIT/Total Assets (X3), Market Value of Equity/Total Liabilities (X4), and Sales/Total Assets (X5). A score > 2.99 indicates a safe zone, 1.81-2.99 indicates a gray zone, and < 1.81 indicates high distress probability.",
+    "domain": "Corporate Finance, Controlling & Accounting",
+    "source": "baai_financial_corpus.json"
+  },
+  {
+    "id": "baai_fin_015",
+    "topic": "[Activity Based Costing] Cost Drivers and ABC vs Traditional Absorption Costing",
+    "instruction": "[Activity Based Costing] Cost Drivers and ABC vs Traditional Absorption Costing",
+    "content": "Topic: [Activity Based Costing] Cost Drivers and ABC vs Traditional Absorption Costing\n\nFinancial Controlling Principles & Analysis:\nActivity-Based Costing (ABC) assigns overhead costs to activities (e.g. machine setups, quality inspections, purchase orders) and then to products based on actual activity consumption drivers. Traditional absorption costing allocates overhead using a single arbitrary volume metric (e.g. direct labor hours), which distorts product profitability for high-complexity, low-volume product lines.",
+    "domain": "Corporate Finance, Controlling & Accounting",
+    "source": "baai_financial_corpus.json"
+  },
+  {
+    "id": "baai_fin_016",
+    "topic": "[Fixed Income] Macaulay Duration, Modified Duration, and Convexity",
+    "instruction": "[Fixed Income] Macaulay Duration, Modified Duration, and Convexity",
+    "content": "Topic: [Fixed Income] Macaulay Duration, Modified Duration, and Convexity\n\nFinancial Controlling Principles & Analysis:\nMacaulay Duration calculates the weighted average time to receive a bond's cash flows. Modified Duration = Macaulay Duration / (1 + YTM/n), measuring the percentage bond price sensitivity to a 100 bps change in yield. Convexity measures the second derivative of price with respect to yield, accounting for curvature and improving price change approximations for large yield swings.",
+    "domain": "Corporate Finance, Controlling & Accounting",
+    "source": "baai_financial_corpus.json"
+  },
+  {
+    "id": "baai_fin_017",
+    "topic": "[M&A & Consolidation] Purchase Price Allocation (PPA) and Goodwill Impairment",
+    "instruction": "[M&A & Consolidation] Purchase Price Allocation (PPA) and Goodwill Impairment",
+    "content": "Topic: [M&A & Consolidation] Purchase Price Allocation (PPA) and Goodwill Impairment\n\nFinancial Controlling Principles & Analysis:\nIn business combinations under IFRS 3 / ASC 805, the acquirer must allocate the purchase consideration to identifiable tangible and intangible assets (patents, customer relationships, brands) at fair value. The excess consideration over net fair value is recognized as Goodwill. Goodwill is not amortized but tested annually for impairment under IAS 36 / ASC 350.",
+    "domain": "Corporate Finance, Controlling & Accounting",
+    "source": "baai_financial_corpus.json"
+  },
+  {
+    "id": "baai_fin_018",
+    "topic": "[Capital Budgeting] Profitability Index (PI) and Capital Rationing",
+    "instruction": "[Capital Budgeting] Profitability Index (PI) and Capital Rationing",
+    "content": "Topic: [Capital Budgeting] Profitability Index (PI) and Capital Rationing\n\nFinancial Controlling Principles & Analysis:\nThe Profitability Index (PI = Present Value of Future Cash Flows / Initial Investment) measures value creation per dollar invested. Under capital rationing where investment capital is constrained, ranking projects by PI rather than absolute NPV maximizes total portfolio value within the available capital budget.",
+    "domain": "Corporate Finance, Controlling & Accounting",
+    "source": "baai_financial_corpus.json"
+  },
+  {
+    "id": "baai_fin_019",
+    "topic": "[Performance Measurement] Economic Value Added (EVA) and Return on Invested Capital (ROIC)",
+    "instruction": "[Performance Measurement] Economic Value Added (EVA) and Return on Invested Capital (ROIC)",
+    "content": "Topic: [Performance Measurement] Economic Value Added (EVA) and Return on Invested Capital (ROIC)\n\nFinancial Controlling Principles & Analysis:\nEconomic Value Added (EVA) measures true economic profit: EVA = NOPAT - (Invested Capital * WACC) = (ROIC - WACC) * Invested Capital. A company creates shareholder value only when its Return on Invested Capital (ROIC = NOPAT / Invested Capital) exceeds its Weighted Average Cost of Capital (WACC).",
+    "domain": "Corporate Finance, Controlling & Accounting",
+    "source": "baai_financial_corpus.json"
+  },
+  {
+    "id": "baai_fin_020",
+    "topic": "[Lease Accounting] Sale and Leaseback Transactions under IFRS 16",
+    "instruction": "[Lease Accounting] Sale and Leaseback Transactions under IFRS 16",
+    "content": "Topic: [Lease Accounting] Sale and Leaseback Transactions under IFRS 16\n\nFinancial Controlling Principles & Analysis:\nIn a sale and leaseback transaction, entities first determine whether the asset transfer satisfies IFRS 15 performance obligations for a sale. If recognized as a sale, the seller-lessee derecognizes the underlying asset, measures the RoU asset at the proportion of previous carrying amount retained, and recognizes only the gain related to the rights transferred to the buyer-lessor.",
+    "domain": "Corporate Finance, Controlling & Accounting",
+    "source": "baai_financial_corpus.json"
+  },
+  {
+    "id": "baai_fin_021",
+    "topic": "[Financial Ratios] Quick Ratio vs Current Ratio and Liquidity Risk Assessment",
+    "instruction": "[Financial Ratios] Quick Ratio vs Current Ratio and Liquidity Risk Assessment",
+    "content": "Topic: [Financial Ratios] Quick Ratio vs Current Ratio and Liquidity Risk Assessment\n\nFinancial Controlling Principles & Analysis:\nThe Current Ratio (Current Assets / Current Liabilities) evaluates short-term solvency. The Quick Ratio (Acid-Test = (Cash + Marketable Securities + Accounts Receivable) / Current Liabilities) excludes inventory and prepaid expenses, providing a more rigorous test of immediate obligations coverage during sudden revenue disruptions.",
+    "domain": "Corporate Finance, Controlling & Accounting",
+    "source": "baai_financial_corpus.json"
+  },
+  {
+    "id": "baai_fin_022",
+    "topic": "[Tax & Transfer Pricing] OECD BEPS Pillar Two Global Minimum Tax (15%) Implementation",
+    "instruction": "[Tax & Transfer Pricing] OECD BEPS Pillar Two Global Minimum Tax (15%) Implementation",
+    "content": "Topic: [Tax & Transfer Pricing] OECD BEPS Pillar Two Global Minimum Tax (15%) Implementation\n\nFinancial Controlling Principles & Analysis:\nOECD BEPS Pillar Two introduces a global minimum corporate tax rate of 15% for multinational enterprise (MNE) groups with consolidated revenues exceeding €750 million. If an entity's effective tax rate (ETR) in a jurisdiction falls below 15%, the Ultimate Parent Entity must pay a Top-up Tax under the Income Inclusion Rule (IIR) or Undertaxed Profits Rule (UTPR).",
+    "domain": "Corporate Finance, Controlling & Accounting",
+    "source": "baai_financial_corpus.json"
+  }
+]

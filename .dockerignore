@@ -1,0 +1,22 @@
+# Ignore local environment and secrets
+.env
+.env.local
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environments
+venv/
+.venv/
+env/
+
+# Ignore local checkpoints & logs
+.ipynb_checkpoints/
+*.log
+
+# Ignore heavy raw dataset cache from build context (mounted via volumes)
+# data/raw/
+chroma_db/*.sqlite3
+.git/
+.gitignore

@@ -1,0 +1,32 @@
+# Core RAG, NLP & Embeddings
+chromadb>=0.4.22
+rank-bm25>=0.2.2
+elasticsearch>=8.12.0
+sentence-transformers>=2.3.0
+spacy>=3.7.0
+datasets>=2.16.0
+langchain>=0.1.10
+langchain-community>=0.0.25
+langchain-core>=0.1.28
+langchain-text-splitters>=0.0.1
+langchain-groq>=0.1.0
+
+# LLM Providers & Environment
+python-dotenv>=1.0.0
+
+# Document & Data Parsing
+pandas>=2.0.0
+pypdf>=4.0.0
+markdown>=3.5.2
+
+# Production API & UI
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.1
+streamlit>=1.31.1
+pydantic>=2.6.0
+pydantic-settings>=2.2.0
+
+# Evaluation
+ragas>=0.1.4
+tqdm>=4.66.0
+pytest>=8.0.0

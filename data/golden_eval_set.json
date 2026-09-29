@@ -1,0 +1,353 @@
+[
+  {
+    "query": "What are the main concerns of Henry Meier regarding the emphasis on cooperative principles in the credit union industry, and how does he think they should be balanced with other considerations?",
+    "ground_truth_answer": "Henry Meier's main concern is that the emphasis on cooperative principles may overshadow more critical issues facing credit unions, such as lending and legislative impact. He believes that an appreciation for the impact of legislation on credit unions is more important than the cooperative structure. Meier also thinks that the cooperative structure is not as crucial to potential young members as some might think, and that convenience and good service are more important to them.",
+    "expected_keywords": [
+      "Henry",
+      "Meier",
+      "main",
+      "concern",
+      "emphasis"
+    ],
+    "expected_source": "baai_finance_economics_raw_75k.csv"
+  },
+  {
+    "query": "Can you summarize the main changes to the standards for defining federal statistical areas that occurred with the 2000-based standards, and how these changes affected the designation of metropolitan and micropolitan areas?",
+    "ground_truth_answer": "The 2000-based standards resulted in the designation of 49 new metropolitan areas, revised the definitions of existing metropolitan areas, and identified micropolitan areas for the first time. Additionally, the 2000 standards established two new sets of statistical areas - metropolitan divisions in the most populous metropolitan areas and combined areas. New England City and Town Areas (NECTAs) were also defined as an alternative to the county-based metropolitan and micropolitan areas in the six New England states.",
+    "expected_keywords": [
+      "based",
+      "standards",
+      "resulted",
+      "designation",
+      "metropolitan"
+    ],
+    "expected_source": "baai_finance_economics_raw_75k.csv"
+  },
+  {
+    "query": "Chen Lin mentions the importance of brand talent and the difficulties in acquiring such talent for small-scale Chinese brands. What solutions does he propose for bridging this talent gap, and what role does the online-offline channel integration play in this?",
+    "ground_truth_answer": "Chen Lin acknowledges the challenge of talent acquisition for small Chinese brands, as skilled personnel are often concentrated in large companies and are difficult to attract to smaller projects. He suggests that brands must initially rely on their own efforts and that over time, the talent gap may be bridged as the brand grows. The integration of online and offline channels is crucial as it contributes to sales volume and brand visibility, which can help attract and retain talent. By following the path of brands like Warby Parker, which expanded from online to offline, Chinese startups can enhance their appeal to potential employees and customers alike.",
+    "expected_keywords": [
+      "Chen",
+      "acknowledges",
+      "challenge",
+      "talent",
+      "acquisition"
+    ],
+    "expected_source": "baai_finance_economics_raw_75k.csv"
+  },
+  {
+    "query": "What measures has China taken to stabilize its economy amidst the challenges posed by the COVID-19 pandemic and international uncertainties?",
+    "ground_truth_answer": "Amidst the challenges of the COVID-19 pandemic and international uncertainties, China has taken a series of measures to stabilize its economy. These measures include: 1) Strengthening macro-policy adjustment to maintain economic stability. China has implemented a proactive fiscal policy and a prudent monetary policy, providing tax and fee reductions, financial support, and investment in key areas to support economic growth. 2) Enhancing domestic demand. China has promoted consumption upgrading and infrastructure investment to stimulate domestic demand and support economic recovery. 3) Supporting enterprises. China has provided targeted assistance to enterprises, especially small and medium-sized enterprises (SMEs), to alleviate their difficulties and ensure the stability of the industrial and supply chains. 4) Expanding opening-up. China has continued to expand high-level opening-up, attracting foreign investment, and promoting international cooperation to stabilize foreign trade and investment. These measures have helped to maintain the stability and recovery of China's economy.",
+    "expected_keywords": [
+      "Amidst",
+      "challenges",
+      "COVID",
+      "pandemic",
+      "international"
+    ],
+    "expected_source": "baai_finance_economics_raw_75k.csv"
+  },
+  {
+    "query": "Can you write a short analysis on how the extreme financial sanctions imposed by Western countries against Russia are potentially leading to the erosion of the US dollar's global dominance and the acceleration of a multipolar reserve currency system?",
+    "ground_truth_answer": "The imposition of extreme financial sanctions by Western countries against Russia is indeed leading to the erosion of the US dollar's dominance on the global stage and accelerating the transition towards a multipolar reserve currency system. The use of the dollar as a tool for political and economic coercion through sanctions has led countries to reassess their reliance on the US currency. They are exploring alternatives and establishing new mechanisms for trade and payments to avoid the impact of such sanctions. The freezing of Russian foreign exchange reserves has further exacerbated the perception of the dollar's diminished safety and reliability. As a result, countries are diversifying their reserves and seeking to establish a more balanced and diversified international financial system. This trend could lead to a diminished role for the US dollar in global finance and the emergence of a multipolar reserve currency system, which would be characterized by a greater distribution of economic power and influence among multiple currencies.",
+    "expected_keywords": [
+      "imposition",
+      "extreme",
+      "financial",
+      "sanctions",
+      "Western"
+    ],
+    "expected_source": "baai_finance_economics_raw_75k.csv"
+  },
+  {
+    "query": "Summarize the main points of the book \"Designing and Implementing Trade Facilitation in Asia and the Pacific, 2013 Update\" in 50-70 words.",
+    "ground_truth_answer": "This book provides guidance for implementing trade facilitation measures and reforms in Asia and the Pacific, bridging gaps among policymakers, practitioners, and economists. It outlines operational guidance on assessing trade facilitation status, necessary measures and reforms, and implementation strategies at national and regional levels.",
+    "expected_keywords": [
+      "book",
+      "provides",
+      "guidance",
+      "implementing",
+      "trade"
+    ],
+    "expected_source": "baai_finance_economics_raw_75k.csv"
+  },
+  {
+    "query": "How does the large cash management pilot program affect the public's daily economic activities according to the People's Bank of China?",
+    "ground_truth_answer": "According to the People's Bank of China, the large cash management pilot program is designed not to impede the public's daily economic activities. The vast majority of daily transactions fall below the set thresholds, and alternative payment methods such as checks, transfers, online payments, and mobile payments are widely available, catering to most needs. The requirement for the majority of the public to use large sums of cash is rare, thus the impact of the pilot program on daily activities is minimal. Moreover, commercial banks have had a reservation system for large withdrawals for years, and setting a threshold for large cash withdrawals and deposits can better satisfy the public's needs while reducing societal costs.",
+    "expected_keywords": [
+      "According",
+      "People",
+      "Bank",
+      "China",
+      "large"
+    ],
+    "expected_source": "baai_finance_economics_raw_75k.csv"
+  },
+  {
+    "query": "Can you explain the concept of \"malinvestments\" mentioned in the text and how it relates to the author's criticism of Paul Krugman's views on economic stimulus?",
+    "ground_truth_answer": "The concept of \"malinvestments\" refers to investments that are misallocated or unproductive, often as a result of government intervention or artificial stimulus. The author argues that these malinvestments must be liquidated in order for the economy to recover. In contrast, Krugman's views on economic stimulus focus on injecting more money into the economy, which the author believes only perpetuates the malinvestments and delays the recovery.",
+    "expected_keywords": [
+      "concept",
+      "malinvestments",
+      "refers",
+      "investments",
+      "misallocated"
+    ],
+    "expected_source": "baai_finance_economics_raw_75k.csv"
+  },
+  {
+    "query": "Can you explain the difference between the two settlements mentioned in the article, one involving Bank of America and Fannie Mae, and the other involving 10 banks and foreclosure errors?",
+    "ground_truth_answer": "The two settlements are separate and distinct. The first settlement involves Bank of America and Fannie Mae, where Bank of America agreed to pay more than $10 billion to settle allegations of selling bad loans to Fannie Mae during the housing boom. The second settlement involves 10 banks agreeing to pay more than $8 billion to settle claims that they made errors in foreclosing on people's homes.",
+    "expected_keywords": [
+      "settlements",
+      "separate",
+      "distinct",
+      "first",
+      "settlement"
+    ],
+    "expected_source": "baai_finance_economics_raw_75k.csv"
+  },
+  {
+    "query": "Can you explain the difference between defined-benefit plans and defined-contribution plans, and how they affect retirees' financial security?",
+    "ground_truth_answer": "Defined-benefit plans provide a guaranteed income stream to retirees based on a formula that takes into account their salary and years of service. In contrast, defined-contribution plans, such as 401(k) plans, provide a lump sum of money that employees can invest and manage themselves. This shift from defined-benefit to defined-contribution plans has led to a significant increase in retirees' financial insecurity, as they must manage their own investments and risk outliving their assets.",
+    "expected_keywords": [
+      "Defined",
+      "benefit",
+      "plans",
+      "provide",
+      "guaranteed"
+    ],
+    "expected_source": "baai_finance_economics_raw_75k.csv"
+  },
+  {
+    "query": "Based on the article, what additional resources are recommended for readers who wish to regularly track industry trends, and how can these resources be accessed within The Value Line Investment Survey?",
+    "ground_truth_answer": "The article recommends several resources for readers who wish to regularly track industry trends: \"Industries in Order of Timeliness\" (Part 1, Summary & Index), \"Timely Stocks in Timely Industries\" (Summary & Index), and \"Industry Price Performance, Last Six Weeks\" (Selection & Opinion). These resources can be accessed within The Value Line Investment Survey.",
+    "expected_keywords": [
+      "article",
+      "recommends",
+      "several",
+      "resources",
+      "readers"
+    ],
+    "expected_source": "baai_finance_economics_raw_75k.csv"
+  },
+  {
+    "query": "According to the article, how many confirmed cases of tax-refund identity theft were there in 2008, and how many were there in 2011?",
+    "ground_truth_answer": "There were 51,700 confirmed cases of tax-refund identity theft in 2008, and 1.1 million in 2011.",
+    "expected_keywords": [
+      "confirmed",
+      "cases",
+      "refund",
+      "identity",
+      "theft"
+    ],
+    "expected_source": "baai_finance_economics_raw_75k.csv"
+  },
+  {
+    "query": "Write a brief summary of the three systemic changes proposed to improve the flow of credit to UK businesses, including the establishment of a state bank, easing capital adequacy rules, and offering a government guarantee to some types of small business lending.",
+    "ground_truth_answer": "The three systemic changes proposed to improve the flow of credit to UK businesses are: (1) the establishment of a state bank to lend to small businesses, which would provide an alternative source of funding and increase competition in the market; (2) easing capital adequacy rules for small business lending, which would allow banks to hold less capital against their business loans and make lending more attractive; and (3) offering a government guarantee to some types of small business lending, such as bonds issued by smaller firms, which would reduce the risk for lenders and encourage more direct borrowing by businesses.",
+    "expected_keywords": [
+      "three",
+      "systemic",
+      "changes",
+      "proposed",
+      "improve"
+    ],
+    "expected_source": "baai_finance_economics_raw_75k.csv"
+  },
+  {
+    "query": "What are the three levels of financial disclosure required for companies seeking to raise funds through crowdfunding, as described in the article?",
+    "ground_truth_answer": "The three levels of financial disclosure required for companies seeking to raise funds through crowdfunding are: (1) for issuers seeking to raise up to $100,000, they must provide tax returns and financial statements certified by the company's principal; (2) for those seeking up to $500,000, they must file financial statements approved by an independent CPA; and (3) for issuers seeking to raise more than $500,000, they must provide fully-audited financial statements.",
+    "expected_keywords": [
+      "three",
+      "levels",
+      "financial",
+      "disclosure",
+      "required"
+    ],
+    "expected_source": "baai_finance_economics_raw_75k.csv"
+  },
+  {
+    "query": "Write a brief conclusion that highlights the importance of effort and cognition in achieving success in the stock market, while acknowledging the role of luck and the need for humility when reflecting on one's success.",
+    "ground_truth_answer": "Success in the stock market is a complex interplay of effort, cognition, and a degree of luck. While hard work and intelligent decision-making significantly increase the likelihood of positive outcomes, acknowledging the role of luck is crucial. It's essential to maintain humility and recognize that even the best strategies can't guarantee success due to the inherent unpredictability of the markets. Success should be viewed as a combination of one's efforts, insights, and sometimes favorable market conditions, emphasizing the importance of continuous learning and adaptability in the face of uncertainty.",
+    "expected_keywords": [
+      "Success",
+      "stock",
+      "market",
+      "complex",
+      "interplay"
+    ],
+    "expected_source": "baai_finance_economics_raw_75k.csv"
+  },
+  {
+    "query": "What were the main campaign promises made by Franklin D. Roosevelt in 1932, and how did they differ from his actual policies once he took office?",
+    "ground_truth_answer": "Franklin D. Roosevelt's main campaign promises in 1932 included a \"drastic\" reduction of 25 percent in federal spending, a balanced federal budget, a rollback of government intrusion into agriculture, and restoration of a sound gold currency. However, once he took office, his actual policies were vastly different. He implemented massive increases in federal spending and deficits, and sweeping interventions into the private economy, which were more in line with the Socialist Party candidate Norman Thomas's proposals.",
+    "expected_keywords": [
+      "Franklin",
+      "Roosevelt",
+      "main",
+      "campaign",
+      "promises"
+    ],
+    "expected_source": "baai_finance_economics_raw_75k.csv"
+  },
+  {
+    "query": "What is the purpose of seeking public comment on the ANPR and the two interagency guidance pieces, and what is the expected outcome of this process?",
+    "ground_truth_answer": "The purpose of seeking public comment is to gather feedback and input from the industry and the public to shape further refinements to the framework as the Basel Committee completes its work on the New Accord. The expected outcome of this process is to develop a Notice of Proposed Rulemaking to implement the New Accord in the United States.",
+    "expected_keywords": [
+      "purpose",
+      "seeking",
+      "public",
+      "comment",
+      "gather"
+    ],
+    "expected_source": "baai_finance_economics_raw_75k.csv"
+  },
+  {
+    "query": "Summarize the main economic challenges facing New Hampshire, as listed in the article, and explain how they are interconnected.",
+    "ground_truth_answer": "The main economic challenges facing New Hampshire, as listed in the article, include:\n\n* High property taxes (third highest in the country)\n* High electric rates (eighth highest in the nation)\n* Expensive health care costs (fourth highest in the country)\n* High taxes on business (third highest)\n* High number of citizens who have to leave the state to work (second highest per capita)\n\nThese challenges are interconnected because they all contribute to a high cost of living in New Hampshire, making it less attractive to residents and businesses. For instance, high property taxes lead to higher costs for homeowners and businesses, which can contribute to higher electric rates. Similarly, high health care costs and taxes on businesses can discourage entrepreneurship and job creation, leading to a brain drain and a high number of citizens leaving the state to work.",
+    "expected_keywords": [
+      "main",
+      "economic",
+      "challenges",
+      "facing",
+      "Hampshire"
+    ],
+    "expected_source": "baai_finance_economics_raw_75k.csv"
+  },
+  {
+    "query": "Can you explain the concept of \"unitary taxation\" and how it differs from the current system of international taxation?",
+    "ground_truth_answer": "Unitary taxation is an approach that recognizes the economic reality of multinational corporations (MNCs) as unified firms operating globally, rather than separate entities operating independently in each country. It seeks to tax MNCs based on their genuine economic substance and activities, rather than the artificial constructs created by accountants and lawyers to minimize taxes. This approach differs from the current system, which tries to tax MNCs as if they were separate entities, often leading to tax avoidance and conflicts between nations.",
+    "expected_keywords": [
+      "Unitary",
+      "taxation",
+      "approach",
+      "recognizes",
+      "economic"
+    ],
+    "expected_source": "baai_finance_economics_raw_75k.csv"
+  },
+  {
+    "query": "Write a brief proposal based on Zhang Guiping's suggestions for the Chinese government to consider in order to improve the financing environment for private businesses.",
+    "ground_truth_answer": "Based on Zhang Guiping's suggestions, the Chinese government should consider implementing the following measures to improve the financing environment for private businesses:\n1. Eliminate discriminatory policies and practices that unfairly favor state-owned enterprises in access to credit.\n2. Build and strengthen government-financing guarantee platforms to provide a safety net for small and medium-sized enterprises seeking loans.\n3. Create a more favorable tax environment for borrowers by exploring the introduction of a \"tax loan ratio\" policy to incentivize lending to private businesses.\n4. Streamline and expedite the loan approval process for small and medium-sized private enterprises.\n5. Establish a comprehensive financial service model that caters to the lifecycle of a business, ensuring that financial services are available at every stage of business growth.\n6. Refine incentive mechanisms and performance metrics to encourage banks and other financial institutions to extend credit to private businesses, with clear exemptions to protect loan officers from undue risk.",
+    "expected_keywords": [
+      "Based",
+      "Zhang",
+      "Guiping",
+      "suggestions",
+      "Chinese"
+    ],
+    "expected_source": "baai_finance_economics_raw_75k.csv"
+  },
+  {
+    "query": "What were the main findings of the \"2017中国消费信贷市场研究\" report regarding the state of China's consumer finance market and its future direction?",
+    "ground_truth_answer": "The \"2017中国消费信贷市场研究\" report highlights that consumer finance has become a crucial factor in promoting consumption growth and economic transformation in China. The report emphasizes the importance of compliance and innovation for the healthy and sustainable development of the consumer finance market. It also identifies the typical consumer credit client as young, low-income, and well-educated, with a preference for companies that are large, compliant, transparent, and offer convenience.",
+    "expected_keywords": [
+      "report",
+      "highlights",
+      "consumer",
+      "finance",
+      "become"
+    ],
+    "expected_source": "baai_finance_economics_raw_75k.csv"
+  },
+  {
+    "query": "How might the tax reform bill affect the global economic landscape, particularly concerning the competitive position of the United States and its impact on emerging markets?",
+    "ground_truth_answer": "The tax reform bill could potentially enhance the competitive edge of the United States in the global economy by making its corporate tax rate more competitive with those of other industrialized nations. By reducing taxes on corporations and increasing their capital investment capability, it could attract foreign investment, possibly at the expense of emerging markets. These markets, including China, might face pressure due to the potential diminishment of their cost advantages in resources and labor. Furthermore, the U.S. tax cuts might instigate a global trend of tax reduction, leading to a competitive tax environment worldwide.",
+    "expected_keywords": [
+      "reform",
+      "bill",
+      "potentially",
+      "enhance",
+      "competitive"
+    ],
+    "expected_source": "baai_finance_economics_raw_75k.csv"
+  },
+  {
+    "query": "Can you explain the concept of limited liability in the context of a corporation and how it differs from a normal partnership?",
+    "ground_truth_answer": "In a normal partnership, the partners are personally liable for the debts and obligations of the partnership. This means that if the partnership incurs debt or is sued, the partners' personal assets can be seized to pay off the debt or settle the lawsuit. In contrast, a corporation has limited liability, which means that the shareholders are not personally liable for the corporation's debts and obligations. The corporation's assets are separate from the shareholders' personal assets, and creditors can only collect from the corporation's assets, not from the shareholders' personal assets.",
+    "expected_keywords": [
+      "normal",
+      "partnership",
+      "partners",
+      "personally",
+      "liable"
+    ],
+    "expected_source": "baai_finance_economics_raw_75k.csv"
+  },
+  {
+    "query": "According to the text, how do the middle class contribute to the development of the stock market in China?",
+    "ground_truth_answer": "The middle class contributes significantly to the development of the stock market in China. As a group with the financial capability to invest in securities, the middle class provides critical financial support for the stock market's growth. Their participation and investment capacity help stabilize and expand the market, making it more robust and attractive to both domestic and foreign investors.",
+    "expected_keywords": [
+      "middle",
+      "class",
+      "contributes",
+      "significantly",
+      "development"
+    ],
+    "expected_source": "baai_finance_economics_raw_75k.csv"
+  },
+  {
+    "query": "According to the author, what is the issue with Professor Krugman's assertion that Europe has implemented \"spending cuts\" and that this approach hasn't worked?",
+    "ground_truth_answer": "The author argues that Professor Krugman's assertion is incorrect because there has been little to no reduction in government spending in France and the United Kingdom. In fact, government spending has continued to grow in these countries, albeit at a slower rate in the UK.",
+    "expected_keywords": [
+      "author",
+      "argues",
+      "Professor",
+      "Krugman",
+      "assertion"
+    ],
+    "expected_source": "baai_finance_economics_raw_75k.csv"
+  },
+  {
+    "query": "What is the mandatory timeline for Form 8-K disclosure under SEC Item 1.05 for material cybersecurity incidents?",
+    "expected_keywords": [
+      "four business days",
+      "Item 1.05",
+      "material",
+      "Form 8-K"
+    ],
+    "expected_source": "financial_regulatory_standards_2026.json"
+  },
+  {
+    "query": "What are the differences between Scope 1, Scope 2, and Scope 3 emissions under IFRS S2 in 2026?",
+    "expected_keywords": [
+      "Scope 1",
+      "Scope 2",
+      "Scope 3",
+      "upstream",
+      "downstream value chain"
+    ],
+    "expected_source": "financial_regulatory_standards_2026.json"
+  },
+  {
+    "query": "What are the eligibility criteria and turnover thresholds for EU CSRD Wave 2 compliance in 2026?",
+    "expected_keywords": [
+      ">250 employees",
+      ">€50M net revenue",
+      ">€25M balance sheet",
+      "Double Materiality"
+    ],
+    "expected_source": "financial_regulatory_standards_2026.json"
+  },
+  {
+    "query": "What is the Basel III Endgame capital output floor percentage for risk-weighted assets?",
+    "expected_keywords": [
+      "72.5%",
+      "output floor",
+      "standardized approaches",
+      "internal models"
+    ],
+    "expected_source": "financial_regulatory_standards_2026.json"
+  },
+  {
+    "query": "What confidence level is required for Expected Shortfall under the FRTB market risk framework?",
+    "expected_keywords": [
+      "Expected Shortfall",
+      "97.5%",
+      "FRTB",
+      "Fundamental Review of the Trading Book"
+    ],
+    "expected_source": "financial_regulatory_standards_2026.json"
+  }
+]
