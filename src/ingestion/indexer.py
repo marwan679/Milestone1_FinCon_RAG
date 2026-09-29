@@ -1,7 +1,14 @@
 import pickle
 import json
+import os
 from pathlib import Path
 from typing import List, Dict, Any, Optional
+
+try:
+    import torch
+    HAVE_TORCH = True
+except ImportError:
+    HAVE_TORCH = False
 
 try:
     import chromadb
@@ -19,7 +26,7 @@ except ImportError:
 from src.config import settings
 
 class Indexer:
-    """Manages both Dense Vector Index (ChromaDB) and Sparse Lexical Index (Elasticsearch BM25 or rank_bm25)."""
+    """Manages both Dense Vector Index (ChromaDB with CUDA GPU acceleration) and Sparse Lexical Index."""
 
     def __init__(
         self,
@@ -30,13 +37,18 @@ class Indexer:
         self.bm25_path = Path(bm25_path)
         self.fallback_chunks_path = self.persist_dir / "child_chunks_store.json"
         
+        # Determine optimal device (CUDA if GPU available, else CPU)
+        self.device = "cuda" if HAVE_TORCH and torch.cuda.is_available() else "cpu"
+        print(f"[Indexer] Initializing Indexer (Compute Device: {self.device.upper()})")
+
         # 1. Initialize ChromaDB for dense vector search if available
         self.persist_dir.mkdir(parents=True, exist_ok=True)
         if HAVE_CHROMADB:
             try:
                 self.client = chromadb.PersistentClient(path=str(self.persist_dir))
                 self.embedding_fn = embedding_functions.SentenceTransformerEmbeddingFunction(
-                    model_name=settings.EMBEDDING_MODEL_NAME
+                    model_name=settings.EMBEDDING_MODEL_NAME,
+                    device=self.device
                 )
                 self.collection = self.client.get_or_create_collection(
                     name="fincon_child_chunks",
@@ -92,32 +104,46 @@ class Indexer:
             self.es.indices.create(index=settings.ELASTICSEARCH_INDEX, body=index_body)
             print(f"[Indexer] Elasticsearch index '{settings.ELASTICSEARCH_INDEX}' created.")
 
-    def build_indexes(self, child_chunks: List[Dict[str, Any]]):
-        """Indexes child chunks in ChromaDB, and indexes in Elasticsearch (and saves local BM25 fallback)."""
+    def build_indexes(self, child_chunks: List[Dict[str, Any]], max_index_chunks: Optional[int] = None):
+        """
+        Indexes child chunks in ChromaDB (with GPU batching) and Elasticsearch / rank_bm25.
+        Optionally limits the number of chunks indexed for rapid iteration.
+        """
         if not child_chunks:
             print("[Indexer] Warning: No child chunks to index.")
             return
 
-        print(f"[Indexer] Indexing {len(child_chunks)} child chunks in ChromaDB...")
+        # Optional chunk slicing if specified
+        target_chunks = child_chunks[:max_index_chunks] if max_index_chunks else child_chunks
+        total_count = len(target_chunks)
+        print(f"[Indexer] Starting indexing for {total_count} child chunks on device: {self.device.upper()}...")
         
         # Prepare data for ChromaDB
-        ids = [chunk["id"] for chunk in child_chunks]
-        documents = [chunk["text"] for chunk in child_chunks]
-        metadatas = [chunk["metadata"] for chunk in child_chunks]
+        ids = [chunk["id"] for chunk in target_chunks]
+        documents = [chunk["text"] for chunk in target_chunks]
+        metadatas = [chunk["metadata"] for chunk in target_chunks]
 
-        # 1. Upsert to ChromaDB if available
+        # 1. Upsert to ChromaDB with optimized large batch sizes
         if self.collection:
-            batch_size = 100
-            for i in range(0, len(ids), batch_size):
+            # 1000 items per batch on GPU drastically cuts SQLite transactions & leverages tensor cores
+            batch_size = 1000 if self.device == "cuda" else 250
+            total_batches = (total_count + batch_size - 1) // batch_size
+            
+            for b_idx in range(total_batches):
+                start = b_idx * batch_size
+                end = min(start + batch_size, total_count)
+                
                 self.collection.upsert(
-                    ids=ids[i : i + batch_size],
-                    documents=documents[i : i + batch_size],
-                    metadatas=metadatas[i : i + batch_size]
+                    ids=ids[start:end],
+                    documents=documents[start:end],
+                    metadatas=metadatas[start:end]
                 )
+                if (b_idx + 1) % max(1, (total_batches // 10)) == 0 or (b_idx + 1) == total_batches:
+                    print(f"[Indexer] ChromaDB progress: {end}/{total_count} chunks indexed ({(end/total_count)*100:.1f}%)")
 
-        # 2. Always persist fallback child chunks json for standalone resilience
+        # 2. Persist child chunks json for standalone resilience
         with open(self.fallback_chunks_path, "w", encoding="utf-8") as f:
-            json.dump(child_chunks, f, indent=2, ensure_ascii=False)
+            json.dump(target_chunks, f, indent=2, ensure_ascii=False)
 
         # 3. Index in Elasticsearch if available
         if self.es:
@@ -135,14 +161,14 @@ class Indexer:
                             "metadata": chunk["metadata"]
                         }
                     }
-                    for chunk in child_chunks
+                    for chunk in target_chunks
                 ]
                 bulk(self.es, actions)
-                print(f"[Indexer] Indexed {len(child_chunks)} documents into Elasticsearch BM25 index.")
+                print(f"[Indexer] Indexed {len(target_chunks)} documents into Elasticsearch BM25 index.")
             except Exception as e:
                 print(f"[Indexer] Error indexing into Elasticsearch: {e}")
 
-        # 4. Save local rank_bm25 pickle if library is present
+        # 4. Save local rank_bm25 pickle
         if HAVE_BM25:
             print("[Indexer] Building local BM25 index...")
             corpus_tokens = [doc.lower().split() for doc in documents]
@@ -151,11 +177,11 @@ class Indexer:
             with open(self.bm25_path, "wb") as f:
                 pickle.dump({
                     "bm25": bm25,
-                    "child_chunks": child_chunks,
+                    "child_chunks": target_chunks,
                     "corpus_tokens": corpus_tokens
                 }, f)
         
-        print(f"[Indexer] Successfully indexed {len(child_chunks)} chunks.")
+        print(f"[Indexer] ✅ Successfully indexed {len(target_chunks)} chunks into vector & lexical stores.")
 
     def search_dense(self, query: str, top_k: int = settings.RETRIEVAL_TOP_K_DENSE, where: Optional[Dict] = None) -> List[Dict[str, Any]]:
         """Dense semantic search using ChromaDB (with fallback)."""
@@ -177,7 +203,7 @@ class Indexer:
                     })
             return hits
 
-        # Fallback: substring / token overlap similarity if ChromaDB is not yet installed
+        # Fallback: substring / token overlap similarity
         return self._search_fallback(query, top_k=top_k, retrieval_type="dense_fallback")
 
     def search_sparse(self, query: str, top_k: int = settings.RETRIEVAL_TOP_K_SPARSE) -> List[Dict[str, Any]]:
