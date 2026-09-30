@@ -31,4 +31,5 @@ ragas>=0.1.4
 tqdm>=4.66.0
 pytest>=8.0.0
 gradio>=5.9.1
+spaces
 

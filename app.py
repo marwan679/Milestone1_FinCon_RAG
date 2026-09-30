@@ -3,6 +3,14 @@ import gradio as gr
 from src.generation.chain import FinConRAGPipeline
 from src.ingestion.run_ingestion import run_ingestion_pipeline
 
+try:
+    import spaces
+    def gpu_decorator(fn):
+        return spaces.GPU(fn)
+except Exception:
+    def gpu_decorator(fn):
+        return fn
+
 # Initialize Pipeline
 pipeline = None
 
@@ -20,6 +28,7 @@ SAMPLE_QUERIES = [
     "What confidence level is required for Expected Shortfall under the FRTB market risk framework?"
 ]
 
+@gpu_decorator
 def handle_ingestion():
     try:
         run_ingestion_pipeline()
@@ -30,7 +39,9 @@ def handle_ingestion():
     except Exception as e:
         return f"❌ Ingestion failed: {str(e)}"
 
+@gpu_decorator
 def handle_query(query: str, top_k: int):
+
     if not query or not query.strip():
         return (
             "⚠️ Please enter a valid financial question.",
