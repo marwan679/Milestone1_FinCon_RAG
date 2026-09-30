@@ -82,20 +82,22 @@ with gr.Blocks(title="FinCon & Regulatory RAG Assistant", css=custom_css, theme=
         "**Production Hybrid RAG** • Hierarchical Parent-Child Indexing • Cross-Encoder Reranker • Citation Enforcement"
     )
     
-    with gr.Sidebar():
-        gr.Markdown("### ⚙️ Pipeline Configuration")
-        top_k_slider = gr.Slider(minimum=1, maximum=8, value=3, step=1, label="Top-K Rerank Results")
-        
-        ingest_btn = gr.Button("🔄 Run Document Ingestion", variant="secondary")
-        ingest_status = gr.Textbox(label="Ingestion Status", interactive=False, lines=2)
-        ingest_btn.click(fn=handle_ingestion, outputs=[ingest_status])
-        
-        gr.Markdown("---")
-        gr.Markdown("### 📊 Sample 2026 Queries")
-        sample_dropdown = gr.Dropdown(choices=SAMPLE_QUERIES, label="Select a sample query", value=None)
-    
     with gr.Row():
-        with gr.Column(scale=4):
+        # Left Configuration Column
+        with gr.Column(scale=1, min_width=300):
+            gr.Markdown("### ⚙️ Pipeline Configuration")
+            top_k_slider = gr.Slider(minimum=1, maximum=8, value=3, step=1, label="Top-K Rerank Results")
+            
+            ingest_btn = gr.Button("🔄 Run Document Ingestion", variant="secondary")
+            ingest_status = gr.Textbox(label="Ingestion Status", interactive=False, lines=2)
+            ingest_btn.click(fn=handle_ingestion, outputs=[ingest_status])
+            
+            gr.Markdown("---")
+            gr.Markdown("### 📊 Sample 2026 Queries")
+            sample_dropdown = gr.Dropdown(choices=SAMPLE_QUERIES, label="Select a sample query", value=None)
+        
+        # Right Main Interface Column
+        with gr.Column(scale=3):
             query_input = gr.Textbox(
                 label="Enter your Financial Controlling / Regulatory Question:",
                 placeholder="e.g. What is the mandatory timeline for Form 8-K disclosure under SEC Item 1.05?",
@@ -104,24 +106,25 @@ with gr.Blocks(title="FinCon & Regulatory RAG Assistant", css=custom_css, theme=
             sample_dropdown.change(fn=lambda s: s, inputs=[sample_dropdown], outputs=[query_input])
             
             search_btn = gr.Button("🔍 Search & Analyze", variant="primary", size="lg")
-    
-    with gr.Group():
-        gr.Markdown("### 📝 Financial Controlling Synthesis")
-        answer_output = gr.Markdown()
-        meta_output = gr.Markdown()
-        sources_output = gr.Markdown()
-    
-    with gr.Accordion("🔍 Deep Dive: Retrieved Child Chunks & Reranker Scores", open=False):
-        chunks_output = gr.Markdown()
-        
-    with gr.Accordion("📖 Deep Dive: Full Parent Context Sent to LLM", open=False):
-        context_output = gr.Code(language="markdown")
-    
-    search_btn.click(
-        fn=handle_query,
-        inputs=[query_input, top_k_slider],
-        outputs=[answer_output, meta_output, sources_output, chunks_output, context_output]
-    )
+            
+            with gr.Group():
+                gr.Markdown("### 📝 Financial Controlling Synthesis")
+                answer_output = gr.Markdown()
+                meta_output = gr.Markdown()
+                sources_output = gr.Markdown()
+            
+            with gr.Accordion("🔍 Deep Dive: Retrieved Child Chunks & Reranker Scores", open=False):
+                chunks_output = gr.Markdown()
+                
+            with gr.Accordion("📖 Deep Dive: Full Parent Context Sent to LLM", open=False):
+                context_output = gr.Code(language="markdown")
+            
+            search_btn.click(
+                fn=handle_query,
+                inputs=[query_input, top_k_slider],
+                outputs=[answer_output, meta_output, sources_output, chunks_output, context_output]
+            )
+
 
 if __name__ == "__main__":
     demo.launch()
