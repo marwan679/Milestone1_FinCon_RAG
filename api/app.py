@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.responses import RedirectResponse
 from pydantic import BaseModel, Field
 from typing import List, Dict, Any, Optional
 from src.generation.chain import FinConRAGPipeline
@@ -29,6 +30,11 @@ class QueryResponse(BaseModel):
 class IngestionResponse(BaseModel):
     status: str
     message: str
+
+@app.get("/", include_in_schema=False)
+def root_redirect():
+    """Redirects base root URL directly to Swagger UI docs."""
+    return RedirectResponse(url="/docs")
 
 @app.get("/health")
 def health_check():
