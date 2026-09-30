@@ -1,16 +1,27 @@
 import os
 from pathlib import Path
 from dataclasses import dataclass, field
+from dotenv import load_dotenv
+
+# Explicitly load .env from the project root (parent directory of src/)
+BASE_DIR = Path(__file__).resolve().parent.parent
+ENV_PATH = BASE_DIR / ".env"
+
+if ENV_PATH.exists():
+    load_dotenv(dotenv_path=ENV_PATH, override=True)
+else:
+    # Fallback to search in current working directory / environment
+    load_dotenv(override=True)
 
 @dataclass
 class Settings:
     # Base Paths
-    BASE_DIR: Path = field(default_factory=lambda: Path(__file__).resolve().parent.parent)
-    DATA_RAW_DIR: Path = field(default_factory=lambda: Path(__file__).resolve().parent.parent / "data" / "raw")
-    DATA_PROCESSED_DIR: Path = field(default_factory=lambda: Path(__file__).resolve().parent.parent / "data" / "processed")
-    CHROMA_PERSIST_DIR: Path = field(default_factory=lambda: Path(__file__).resolve().parent.parent / "chroma_db")
-    PARENT_STORE_PATH: Path = field(default_factory=lambda: Path(__file__).resolve().parent.parent / "data" / "parent_docstore.json")
-    BM25_INDEX_PATH: Path = field(default_factory=lambda: Path(__file__).resolve().parent.parent / "data" / "bm25_index.pkl")
+    BASE_DIR: Path = field(default_factory=lambda: BASE_DIR)
+    DATA_RAW_DIR: Path = field(default_factory=lambda: BASE_DIR / "data" / "raw")
+    DATA_PROCESSED_DIR: Path = field(default_factory=lambda: BASE_DIR / "data" / "processed")
+    CHROMA_PERSIST_DIR: Path = field(default_factory=lambda: BASE_DIR / "chroma_db")
+    PARENT_STORE_PATH: Path = field(default_factory=lambda: BASE_DIR / "data" / "parent_docstore.json")
+    BM25_INDEX_PATH: Path = field(default_factory=lambda: BASE_DIR / "data" / "bm25_index.pkl")
 
     # Chunking Configuration (Hierarchical)
     PARENT_CHUNK_SIZE: int = 1200
